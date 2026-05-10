@@ -272,3 +272,5 @@ No server needed later     No server needed later
 | Actions `deploy` job | GitHub's Pages API | site goes live on CDN | Publishing |
 
 There's only ever **one build**: `astro build`. Everything else is either a dev tool or a way to move/serve the output of that build.
+
+> **Note:** Astro 6 requires Node.js ≥ 22.12.0. GitHub Actions `ubuntu-latest` defaults to Node 20 — always pin `node-version: 22` in the `setup-node` step or the build will fail immediately.
